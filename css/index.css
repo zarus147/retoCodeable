@@ -1,0 +1,169 @@
+
+body{
+    background: red;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mycontainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background: url('https://images5.alphacoders.com/133/1338082.png') center/cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.neblina-negra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa según sea necesario */
+}
+.contenido-body{
+    position: absolute;
+    top: 0;
+    
+    z-index: 1;
+    width: 100%;
+    
+}
+
+.contenido-body .cont-menu{
+    /*background-color: red;*/
+    box-sizing: border-box;
+    
+}
+
+.contenido-body .cont-menu .comp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.comp .titulo{
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.comp .lis{
+    color: rgb(47, 255, 186);
+    text-transform: uppercase;
+
+}
+.comp .lis ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+.comp .lis ul li{
+    list-style: none;
+    font-size: 15px;
+}
+
+
+
+
+/* Seccion notas y formulario*/
+.contenido-body .cont-notas{
+    
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.cont-notas .titulo-n{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.cont-notas #notaForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#notaForm textarea{
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+#notaForm .register{
+    
+    padding: 10px 10px;
+}
+#notaForm .register button{
+    background-color: transparent;
+    border: 1px solid rgb(47, 255, 186);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 11px;
+}
+
+
+.cont-notas .caja-nota{
+    /*background: rgb(223, 127, 127);*/
+    padding: 0px 10px;
+
+}
+
+.caja-nota .nota{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.caja-nota .nota .solution{
+    position: relative;   
+}
+
+.caja-nota .nota .solution .card-nota{
+    color: rgb(43, 42, 42);
+    background: whitesmoke;
+    width: 250px;
+    height: 150px;
+    border-radius: 3px;
+    padding: 4px 3px;
+    overflow-y: auto;
+}
+
+.caja-nota .nota .card-nota button{
+    position: absolute;
+    background: rgb(18, 167, 117);
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 7px;
+    cursor: pointer;
+    z-index: 0;
+}
+.caja-nota .nota .card-nota button:hover{
+    background: rgb(241, 25, 25);
+}
+
+
+
+
+
+
+
+
