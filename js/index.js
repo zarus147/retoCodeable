@@ -6,19 +6,31 @@ const Notasa = [
     {
         id: "1",
         nota: "All templates were built by designers using Webflow without writing code. That means you can customize them using our visual interface too.",
-     
+
     }
+    
 ];
 
 
 const listanotas = document.querySelector(".nota");
 
 function agregarNota(contenidorecibido) {
-    const nuevaNota = {
-        id: (Notasa.length + 1).toString(), 
-        nota: contenidorecibido
-    };
-    Notasa.push(nuevaNota);
+
+    if (contenidorecibido.length === 0 ) {
+        console.log("dgdfhg")
+        
+    }else{
+        const nuevaNota = {
+            id: (Notasa.length + 1).toString(), 
+            nota: contenidorecibido
+        };
+        Notasa.push(nuevaNota);
+
+    
+
+    }
+
+    
 }
 
 function eliminarNota(id) {
@@ -68,6 +80,8 @@ function componeteNota(nota , id) {
 
 }
 
+
+/* mostrar datos */
 Notasa.map((x)=>{
     const mostrar = componeteNota(x.nota , x.id);
     listanotas.appendChild(mostrar); 
@@ -92,6 +106,7 @@ function manejarEnvioFormulario(event) {
     })
 
     document.getElementById("xnota").value = "";
+   
 
 }
 
